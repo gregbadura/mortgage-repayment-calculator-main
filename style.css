@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+p{
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+}
+
+._rightCompleted p {
+    text-align: start;
+}
+
+label{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 60%);
+    margin-bottom: 9px;
+    margin-top: 5px;
+}
+
+input{
+    border-width: 1px;
+    padding: 10px;
+    font-weight: 700;
+}
+
+input:focus{
+    outline: none;
+}
+
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: hsl(61, 70%, 52%);
+}
+
+._main{
+    margin-top: 85px;
+    padding-left: 15px;
+
+    width: 60rem;
+    height: 30rem;
+
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 18px;
+}
+
+._title{
+    display: flex;
+    justify-content: space-between;
+}
+
+._rightEmpty{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+._rightCompleted{
+    padding-left: 25px;
+    padding-right: 15px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;    
+}
+
+.shadowbox{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    height: 12.5rem;
+    border-radius: 21px;
+    background-color: hsl(62, 72%, 53%);
+}
+
+.box{
+    margin-top: 3px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 12.5rem;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: hsl(202, 56%, 12%);
+}
+
+hr{
+    width: 100%;
+    color: hsl(202, 26%, 26%);
+}
+
+.options{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+.br-5{
+    border-radius: 5px;
+    color: hsl(202, 55%, 16%);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+._submitbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 30px;
+    width: 17rem;
+    padding: 10px;
+    font-weight: 700;
+    margin-top: 45px;
+}
+
+.amountinput{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.funt{
+    background-color: hsl(203, 41%, 72%);
+    font-weight: 500;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    width: 30px;
+    height: 100%;
+    margin-top: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.years{
+    background-color: hsl(203, 41%, 72%);
+    font-weight: 700;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    width: 50px;
+    height: 100%;
+    margin-top: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 13px;
+}
+
+.precent{
+    background-color: hsl(203, 41%, 72%);
+    font-weight: 700;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    width: 50px;
+    height: 100%;
+    margin-top: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Resets */
+button {
+    /* Usunięcie wszystkich marginesów i wypełnień */
+    margin: 0;
+    padding: 0;
+    /* Usunięcie obramowania */
+    border: none;
+    /* Ustawienie domyślnego tła */
+    background: none;
+    /* Usunięcie stylu cienia */
+    box-shadow: none;
+    /* Usunięcie stylu tekstowego */
+    font: inherit;
+    /* Usunięcie kursora domyślnego */
+    cursor: pointer;
+    /* Usunięcie domyślnej ramki focus */
+    outline: none;
+    /* Usunięcie domyślnych stylów dla wewnętrznych elementów */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button:disabled {
+    /* Styl dla przycisku nieaktywnego */
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.inputreset{
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+        font: inherit;
+        color: inherit;
+        outline: none;
+        -webkit-appearance: none; /* Usunięcie stylów specyficznych dla przeglądarek WebKit */
+        -moz-appearance: none;    /* Usunięcie stylów specyficznych dla przeglądarek Firefox */
+        appearance: none;        /* Usunięcie domyślnych stylów przeglądarek */
+        font-weight: 700;
+}

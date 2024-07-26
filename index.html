@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="myscripts.js"></script>
+
+</head>
+<body style="background-color: black;">
+
+  <div class="_main" style="display: flex;">
+      <div class="_left" style="width: 50%; margin-right: 30px;">
+        <div class="_title"><h2 style="color:hsl(202, 55%, 16%);">Mortgage Calculator</h2> <button style="text-decoration: underline; color: hsla(0, 0%, 0%, 40%); 
+        font-weight: 500; font-size: 14px;">Clear All</button></div>
+          <form id="form1" style="display: flex; flex-direction: column;" action="">
+                 
+                  <label for="amount">Mortgage Amount</label>
+                  <div class="amountinput" style="display: flex;"><span class="funt">&nbsp£&nbsp</span><input  style="padding-left: 10px;" class="inputreset" type="text" name="amount" id="amount" class="br-5"></div>
+                  <div style="display: flex; margin-top:20px; ">
+                      <div>
+                        <label for="term">Mortgage Term</label>
+                        <div style="display: flex; align-items: center; margin-right: 40px; margin-top: 10px" class="amountinput">
+                            <input class="inputreset" type="text" name="term" id="term" class="br-5" style="width: 80%; padding:10px; font-weight: 700;">
+                            <span class="years" >&nbspyears&nbsp</span>
+                        </div>
+                      </div>
+                      <div>
+                        <label for="rate">Interest Rate</label>
+                          <div style="display: flex;align-items: center; margin-top: 10px;" class="amountinput">
+                            <input class="inputreset" type="text" name="rate" id="rate" class="br-5" style="width: 90%; padding: 10px; font-weight: 700;">
+                            <span class="precent">&nbsp%&nbsp</span>
+                          </div>
+                      </div>
+                  </div>
+
+              <span style="font-weight: 500;
+              font-size: 14px;
+              color: rgba(0, 0, 0, 60%);
+              margin-bottom: 9px;
+              margin-top: 20px;">Mortgage Type</span>
+              <div class="options br-5">
+                <input type="checkbox" name="o1" id="o1" class="checkbox-round">
+                <label for="o1" style="font-weight: 700; color: hsl(202, 55%, 16%);">&nbsp Repayment</label>
+              </div>
+              <div class="options br-5">
+                <input type="checkbox" name="o2" id="o2" class="checkbox-round">
+                <label for="o2" style="font-weight: 700; color: hsl(202, 55%, 16%);">&nbsp Interest Only</label>
+              </div>
+          </form>
+          <button class="_submitbutton" type="submit" form="form1" value="Submit">
+            <img src="./assets/images/icon-calculator.svg" alt="icon-calculator">
+            &nbsp Calculate Repayments</button>
+        </div>
+
+        <div  class="_rightEmpty hidden" style="color: white;width: 50%; background-color:hsl(201, 54%, 16%); border-bottom-left-radius: 50px;">
+          <img src="./assets/images/illustration-empty.svg" alt="emptyillustration">
+          <h2 style="margin-bottom: 0; font-size: 20px;">Results shown here</h2>
+          <p style="color: hsla(0, 0%, 100%, 60%);font-size: 14px;">Complete the form and click “calculate repayments” to <br> see what 
+            your monthly repayments would be.</p>
+        </div>
+
+        <div  class="_rightCompleted" style="color: white;width: 50%; background-color:hsl(201, 54%, 16%); border-bottom-left-radius: 50px;">
+          <h2 style="margin-bottom: 0; font-size: 23px;">Your results</h2>
+          <p style="font-size: 13px; color: hsla(0, 0%, 100%, 60%);line-height: 1.5;">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+        
+        <div class="shadowbox">
+          <div class="box">
+            <span style="font-size: 13px; color: hsla(0, 0%, 100%, 60%);">Your monthly repayments</span>
+            <span style="color: hsl(62, 72%, 53%); font-size: 45px; font-weight: 700;margin-top: 10px;margin-bottom: 15px;">£1,797.74</span>
+            <hr>
+            <span style="margin-top: 25px; margin-bottom:10px;">Total you'll repay over the term</span>
+            <span style="font-weight: 700;">£539,322.94</span>
+          </div>
+        </div>
+
+
+        </div>
+
+
+
+  </div>
+
+</body>
+</html>
