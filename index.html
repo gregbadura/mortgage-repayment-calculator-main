@@ -17,8 +17,8 @@
 
   <div class="_main" style="display: flex;">
       <div class="_left" style="width: 50%; margin-right: 30px;">
-        <div class="_title"><h2 style="color:hsl(202, 55%, 16%);">Mortgage Calculator</h2> <button style="text-decoration: underline; color: hsla(0, 0%, 0%, 40%); 
-        font-weight: 500; font-size: 14px;">Clear All</button></div>
+        <div class="_title"><h2 style="color:hsl(202, 55%, 16%);">Mortgage Calculator</h2> <button id="clrButton" style="text-decoration: underline; color: hsla(0, 0%, 0%, 40%); 
+        font-weight: 500; font-size: 14px;" type="button">Clear All</button></div>
           <form id="form1" style="display: flex; flex-direction: column;" action="">
                  
                   <label for="amount">Mortgage Amount</label>
@@ -54,19 +54,19 @@
                 <label for="o2" style="font-weight: 700; color: hsl(202, 55%, 16%);">&nbsp Interest Only</label>
               </div>
           </form>
-          <button class="_submitbutton" type="submit" form="form1" value="Submit">
+          <button id="sendFormButton" class="_submitbutton" type="button" form="form1" value="Submit" onclick="sendForm()">
             <img src="./assets/images/icon-calculator.svg" alt="icon-calculator">
             &nbsp Calculate Repayments</button>
         </div>
 
-        <div  class="_rightEmpty hidden" style="color: white;width: 50%; background-color:hsl(201, 54%, 16%); border-bottom-left-radius: 50px;">
+        <div id="emptyView" class="_rightEmpty" style="color: white;width: 50%; background-color:hsl(201, 54%, 16%); border-bottom-left-radius: 50px;">
           <img src="./assets/images/illustration-empty.svg" alt="emptyillustration">
           <h2 style="margin-bottom: 0; font-size: 20px;">Results shown here</h2>
           <p style="color: hsla(0, 0%, 100%, 60%);font-size: 14px;">Complete the form and click “calculate repayments” to <br> see what 
             your monthly repayments would be.</p>
         </div>
 
-        <div  class="_rightCompleted" style="color: white;width: 50%; background-color:hsl(201, 54%, 16%); border-bottom-left-radius: 50px;">
+        <div id="sendView" class="_rightCompleted hidden" style="color: white;width: 50%; background-color:hsl(201, 54%, 16%); border-bottom-left-radius: 50px;">
           <h2 style="margin-bottom: 0; font-size: 23px;">Your results</h2>
           <p style="font-size: 13px; color: hsla(0, 0%, 100%, 60%);line-height: 1.5;">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
         
