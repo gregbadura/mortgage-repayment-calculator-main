@@ -1,29 +1,25 @@
-console.log("Hello world");
-
 function setDefaultValues(){
-        let optionDefault = document.getElementById("o1");
         let amountPreview = document.getElementById("amount");
         let termPreview = document.getElementById("term");
         let ratePrevie = document.getElementById("rate");
         
-        optionDefault.checked = true;
         amountPreview.value = 300000;
         termPreview.value = 25;
         ratePrevie.value = 5.25;
     }
    
 function clearForm() {
-        let optionDefault = document.getElementById("o1");
-        let optionNotDefault = document.getElementById("o2");
         let amountPreview = document.getElementById("amount");
         let termPreview = document.getElementById("term");
         let ratePreview = document.getElementById("rate");
-        
-        optionDefault.checked = true;
-        optionNotDefault.checked = false;
+        let option1 = document.getElementById("o1");
+        let option2 = document.getElementById("o2");
+
         amountPreview.value = '';
         termPreview.value = '';
         ratePreview.value = '';
+        option1.checked = false; 
+        option2.checked = false;
 
         document.getElementById("emptyView").classList.remove("hidden");
         document.getElementById("sendView").classList.add("hidden");
@@ -47,8 +43,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function sendForm(){
+    let amountPreview = document.getElementById("amount");
+    let termPreview = document.getElementById("term");
+    let ratePreview = document.getElementById("rate");
+    let option1 = document.getElementById("o1");
+    let option2 = document.getElementById("o2");
+
+    amountPreview.value = '';
+    termPreview.value = '';
+    ratePreview.value = '';
+    option1.checked = false; 
+    option2.checked = false;
+
+    
+    
     document.getElementById("emptyView").classList.add("hidden");
     document.getElementById("sendView").classList.remove("hidden");
+
+
+
+
 };
 
 
